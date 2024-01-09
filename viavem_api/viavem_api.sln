@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "viavem_api", "viavem_api\viavem_api.csproj", "{15C4CFA4-E161-4003-9290-774E88A56005}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15C4CFA4-E161-4003-9290-774E88A56005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C4CFA4-E161-4003-9290-774E88A56005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C4CFA4-E161-4003-9290-774E88A56005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C4CFA4-E161-4003-9290-774E88A56005}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73DF62F5-C70F-4EED-BB06-5D98C310BA68}
+	EndGlobalSection
+EndGlobal

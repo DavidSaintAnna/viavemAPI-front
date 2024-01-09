@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\viavem_api.props" />
+</Project>

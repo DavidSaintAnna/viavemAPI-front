@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DvlONuSshL9YgUwE5aTAISkz1O+FPVqdBLOSg39v3hk=",
+  "Source": "viavem_api",
+  "BasePath": "_content/viavem_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
