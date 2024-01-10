@@ -1,9 +1,111 @@
 import "bootstrap/dist/css/bootstrap.css";
-import style from "../styles/Home.module.css";
+import Head from "next/head";
 
 const Index = () => {
   return (
     <>
+      <Head>
+        <style>{`
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+          html,
+          body,
+          input {
+            font-family: "Mulish", sans-serif;
+          }
+
+          .logo {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+
+          .section-padding {
+            padding: 100px 0;
+          }
+
+          .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+          }
+
+          .carousel-caption {
+            border-bottom: 220px;
+            z-index: 2;
+          }
+
+          .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+          }
+
+          .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.9;
+          }
+
+          .navbar-nav a {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+
+          .navbar-light .navbar-brand {
+            color: #000;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+          }
+
+          .w-100 {
+            height: 100vh;
+          }
+
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .carousel-caption {
+              bottom: 370px;
+            }
+            .carousel-caption p {
+              width: 100%;
+            }
+          }
+
+          @media only screen and (max-width: 767px) {
+            .navbar-nav {
+              text-align: center;
+            }
+            .carousel-caption {
+              bottom: 125px;
+            }
+            .carousel-caption h5 {
+              font-size: 17px;
+            }
+            .carousel-caption a {
+              padding: 10px 15px;
+            }
+            .carousel-item {
+              height: 67vh;
+              min-height: 300px;
+            }
+            .carousel-inner > img {
+              height: 53vh;
+            }
+            .w-100 {
+              height: 53vh;
+            }
+          }
+        `}</style>
+      </Head>
       <header>
         <div class="header_right">
           <div class="text-lg-end">
@@ -105,7 +207,8 @@ const Index = () => {
               <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
                 <div class="about-text">
                   <h2 class="text-white">
-                    Nós temos o melhor serviço <span class="text-success">acredite!</span>
+                    Nós temos o melhor serviço{" "}
+                    <span class="text-success">acredite!</span>
                   </h2>
                   <p class="text-secondary">Sempre pensando em você!</p>
                 </div>
