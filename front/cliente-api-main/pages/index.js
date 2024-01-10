@@ -105,8 +105,7 @@ const Index = () => {
               <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
                 <div class="about-text">
                   <h2 class="text-white">
-                    Nós temos o melhor serviço
-                    <span class="text-success">acredite!</span>
+                    Nós temos o melhor serviço <span class="text-success">acredite!</span>
                   </h2>
                   <p class="text-secondary">Sempre pensando em você!</p>
                 </div>
