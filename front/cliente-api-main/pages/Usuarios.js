@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import style from "../styles/Home.module.css";
 
-const Airport = () => {
-  const [airports, setAiports] = useState([]);
+const User = () => {
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     // Faça uma chamada GET para a API Spring Boot
     axios
-      .get("https://localhost:7203/api/Aeroportos/")
+      .get("https://localhost:7203/api/Usuarios/")
       .then((response) => {
-        setAiports(response.data);
+        setUsers(response.data);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de Categorias:", error);
@@ -20,23 +20,25 @@ const Airport = () => {
 
   return (
     <div>
-      <h1 className={style.h1}>Lista de Aeroportos</h1>
+      <h1 className={style.h1}>Lista de Usuarios</h1>
       <table className="table container tabela">
         <thead>
           <tr>
             <th>Id</th>
-            <th>Nome</th>
-            <th>Cidade</th>
-            <th>País</th>
+            <th>Id da passagem</th>
+            <th>nome</th>
+            <th>email</th>
+            <th>senha</th>
           </tr>
         </thead>
-        {airports.map((element) => (
+        {users.map((element) => (
           <tbody key={element.id}>
             <tr className={style.tabela}>
               <td>{element.id}</td>
+              <td>{element.idPassagens}</td>
               <td>{element.nome}</td>
-              <td>{element.cidade}</td>
-              <td>{element.pais}</td>
+              <td>{element.email}</td>
+              <td>{element.senha}</td>
             </tr>
           </tbody>
         ))}
@@ -45,4 +47,4 @@ const Airport = () => {
   );
 };
 
-export default Airport;
+export default User;
